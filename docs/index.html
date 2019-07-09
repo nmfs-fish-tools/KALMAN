@@ -18,7 +18,7 @@
 
               
               
-              <div class = "badge" data-md-tooltip="Not Validated" id="greycheck">
+              <div class = "badge" data-md-tooltip="Support Level" id = internal_inactive >
               <!-- &#10039; -->
               </div>
               
@@ -46,14 +46,11 @@
               
 
               
-              <a href= "https://github.com/nmfs-fish-tools/KALMAN.git" target="_blank" title="link to code repository">
-                <button class = "codelink">
+                <button class = "codelink" id = "nolink">
                 Code Repository
                 </button>
-              </a>
               
-              <button class = "IconButton" title="need support?">
-                ?
+              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
               </button>
 
         </div>
@@ -68,14 +65,16 @@
 
               </div>
 
+
               
 
-              <!-- <a class = "githubIcon" href="https://github.com/nmfs-fish-tools/KALMAN.git" target="_blank"></a> -->
+              <!-- <a class = "githubIcon" href="" target="_blank"></a> -->
 
               <button class = "versionButton">
               Version 2.3
               </button>
         </div>
+
         <div class ="label">
             
              Type: solver
@@ -83,13 +82,14 @@
         </div>
 
         <div class = "authName">
-         author: Seaver, A.
+         Author: Seaver, A.
 
         </div >
 
         <div class ="mainText">
           The Kalman Filter is a recursive algorithm for updating linear projections of the system comprised by of an Observation Equation and a State Equation.Observation Equation: Kalman Observation Equation Image State Equation: Kalman State Equation The user will supply a vector of observations, coefficients of variation on observation error and scale vector (qt).  The model will estimate two parameters: the state variable at time zero (b0) and the standard error on the state variable (sw). The model will return a vector of Filtered and Smoothed observations. Here is a technical manual available with details of equations used in the model.
         </div>
+
         <div class="mainText">
         
           <div class = "ref">
@@ -102,14 +102,35 @@
             </ul>
           
 
+
           
-            </div>
+
+            
+              <div class = "ref">
+            Code Repository Badges
+          </div>
+             
+
+              
+              <img src="https://www.repostatus.org/badges/latest/inactive.svg">
+              
+              
+
+          </div>
       </div>
 
       <div class = "divider"></div>
-        <footer> <a class ="mylink" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
-    <a class ="mylink" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
-    <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a></footer>
+
+        <footer >
+             <img src="./static/noaa-fisheries-rgb-2line-horizontal-small.png" height="75px">
+         <div class="mywrap_center">
+          <a class ="mylink" id = "line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+         <a class ="mylink" id = "line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+         <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
+         </div>
+
+        </footer>
+        <div class ="attribution">Icons by icons8 https://icons8.com/</div>
 
     </div>
 
